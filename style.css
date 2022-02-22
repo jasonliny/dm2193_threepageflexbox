@@ -13,7 +13,8 @@ body {
   background-color: #303044;
 }
 .header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .homepage-navlink, .homepage-navlink:visited {
   font-family: Cinzel;
@@ -22,10 +23,12 @@ body {
   color: white;
 }
 .navbar {
-    font-family: Cinzel;
-    background-color: #202033;
-    margin: 0px;
-    padding: 0px;
+  display: flex;
+  justify-content: center;
+  font-family: Cinzel;
+  background-color: #202033;
+  margin: 0px;
+  padding: 0px;
 }
 .navitem {
   display: inline-block;
@@ -43,9 +46,15 @@ div {
   padding: 0px;
   margin: 0px;
 }
+.main-body {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
 .content {
-  display: inline-block;
-  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
   max-width: 75%;
   width: 60em;
   padding: 10px;
@@ -53,8 +62,7 @@ div {
 }
 .box {
   background-color: #f8f8f8;
-  margin: 10px 0px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
 }
 .content a, .content a:visited {
@@ -63,23 +71,30 @@ div {
 .content li {
   line-height: 25px;
 }
+.source-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
 .sidebar {
-  display: inline-block;
+  align-self: flex-start;
   position: sticky;
   top: 0px;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #dddddd;
   vertical-align: top;
+  width: 20em;
   max-width: 20%;
   padding: 10px;
   border-radius: 5px;
 }
-.sidebar a,a:visited {
-  color:black;
+.sidebar a, .sidebar a:visited {
+  color: black;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
   font-family: Cinzel;
+  text-align: left;
 }
 h1 {
   font-size: 2em;
