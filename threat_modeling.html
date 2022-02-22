@@ -14,25 +14,55 @@
       <li class="navitem"><a class="navlink" href="threat_modeling.html">Threat Modeling</a></li>
       <li class="navitem"><a class="navlink" href="resources.html">External Resources</a></li>
     </ul>
-    <div class="content">
-      <div class="box">
-        <h1>Threat Modeling Basics</h1>
-        <p>To help create your threat model, answer the following questions:</p>
-        <ol>
-          <li>What are you concerned about protecting?</li>
-          <li>Who do you want to protect it from?</li>
-          <li>Which concerns are most important?</li>
-          <li>How much are you willing to compromise to address these concerns?</li>
-        </ol>
-        <h1>Example Situations</h1>
-          <ul>
-            <li>A whistleblower's main priority may be to protect their identity from a company or governemnt at all costs.</li>
-            <li>The average American citizen may wish to keep their information private from large tech companies but is willing to
-              compromise on using certain apps/services (e.g. continuing to use Google's services) for convenience.</li>
-          </ul>
-          <p> In the given examples, each person has different priorities, and will therefore have different threat models.</p>
+    <div class="main-body">
+      <div class="content">
+        <div class="box">
+          <h1 id="modeling-basics">Threat Modeling Basics</h1>
+          <p>To help create your threat model, answer the following questions:</p>
+          <ol>
+            <li>What are you concerned about protecting?</li>
+            <ul>
+              <li>Assets: Possessions you value and want to protect</li>
+              <li>Ex: Electronics, sensitive documents, emails, location data, photos, etc.</li>
+            </ul>
+            <li>Who do you want to protect it from?</li>
+            <ul>
+              <li>Adversaries: A person or entity that poses some threat</li>
+              <li>Ex: Employer, a government agency, coporations, etc.</li>
+            </ul>
+            <li>Which concerns are most important?</li>
+            <ul>
+              <li>Determine consequences of failing to protect your assets as well as the likelihood of threats.</li>
+              <li>Ex: Connecting to an open network without encrypting your data could allow a hacker to access that data</li>
+              <li>Assess the risk of threats. This includes the likelihood of a certain threat occuring as well as the practicality of worrying about a threat.</li>
+              <li>Ex: There is a chance you may experience a car crash, but it may not be worth worrying about for you.</li>
+            </ul>
+            <li>How much are you willing to compromise to address these concerns?</li>
+            <ul>
+              <li>Decide the right balance of convenience and privacy for you.</li>
+              <li>Ex: An activist may be willing to invest more into protecing their communications with people by using setting up email encryption and routing their traffic through anonymized networks, whereas someone else may decide that those concerns are not important for them and that the complexity and speed tradeoff may not be worth the extra privacy protections.</li>
+            </ul>
+          </ol>
+          <h1 id="extra-examples">Additional Example Situations</h1>
+            <ul>
+              <li>A whistleblower's main priority may be to protect their identity from a company or governemnt at all costs.</li>
+              <li>The average American citizen may wish to keep their information private from large tech companies but is willing to
+                compromise on using certain apps/services (e.g. continuing to use Google's services) for convenience.</li>
+            </ul>
+            <p> In the given examples, each person has different priorities, and will therefore have different threat models.</p>
+          <div class="source-info">
+            <span>Source: <a href="https://ssd.eff.org/en/module/your-security-plan">EFF Surveillance Self Defense: Your Security Plan</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar box">
+        <h1>Sections</h1>
+        <hr />
+        <ul>
+          <li><a href="#modeling-basics">Threat Modeling Basics</a></li>
+          <li><a href="extra-examples">Additional Example Situations</a></li>
+        </ul>
       </div>
     </div>
-
   </body>
 </html>
